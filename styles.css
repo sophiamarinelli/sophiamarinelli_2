@@ -1,37 +1,96 @@
 * {
 	padding: 0px;
 	margin: 0px;
+	font-family: "Helvetica";
+	font-weight: lighter;
+
+}
+
+body {
+	background-color: yellow;
 }
 
 .bigtext {
 	position: fixed;
-	top: 0px;
 	font-family: "Helvetica";
 	font-size: 100px;
 	text-align: center;
-	transform: rotate(40deg);
-	transform-origin: bottom left;
-	font-weight: lighter;
 	-webkit-text-fill-color: rgba(0, 0, 0, 0); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
    display: inline-block;
 }
 
-.bigtexttwo {
-	position: fixed;
+.one {
 	top: 0px;
-	font-family: "Helvetica";
-	font-size: 100px;
-	text-align: center;
-	font-weight: lighter;
-	-webkit-text-fill-color: rgba(0, 0, 0, 0); /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-   display: inline-block;
+	transform: rotate(40deg);
+	transform-origin: bottom left;
+}
+
+.two {
+	top: 0px;
+
+}
+
+.three {
+	top: 10%;
+	transform: rotate(-5deg);
+	right: 0;
+	white-space: nowrap;
 }
 
 .viewer {
-	width: 100%;
+	position: absolute;
+	width: 50%;
+	height: 500px;
 	overflow: scroll;
+	z-index: 1;
+	border: 1px solid black;
+
+}
+
+.magnolia {
+	right: 30%;
+	top: 20%;
+}
+
+.recipes {
+	right: 50%;
+	top: 80%;
+}
+
+.image {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.nav {
+	bottom: 10px;
+	right: 10px;
+	position: absolute;
+	max-width: 200px;
+	width: 20%;
+	max-height: 200px;
+	height: 200px;
+	border: 1px solid black;
+	
+}
+
+.linktext {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	display: block;
+	font-size: 50px;
+	-webkit-text-fill-color: rgba(0, 0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+   display: inline-block;
+}
+
+.linktext:hover {
+	color: black;
+	text-decoration: line-through;
 }
