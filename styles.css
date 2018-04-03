@@ -1,0 +1,37 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.bigtext {
+	position: fixed;
+	top: 0px;
+	font-family: "Helvetica";
+	font-size: 100px;
+	text-align: center;
+	transform: rotate(40deg);
+	transform-origin: bottom left;
+	font-weight: lighter;
+	-webkit-text-fill-color: rgba(0, 0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+   display: inline-block;
+}
+
+.bigtexttwo {
+	position: fixed;
+	top: 0px;
+	font-family: "Helvetica";
+	font-size: 100px;
+	text-align: center;
+	font-weight: lighter;
+	-webkit-text-fill-color: rgba(0, 0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+   display: inline-block;
+}
+
+.viewer {
+	width: 100%;
+	overflow: scroll;
+}
