@@ -7,7 +7,7 @@
 
 $( function() {
     $( ".viewer" ).draggable({containment:"document"});
-    $( ".viewer" ).resizable({handles: "n,s"});
+    $( ".viewer" ).resizable({});
     $( ".bigtext" ).draggable({containment:"document"});
     $( ".nav" ).draggable({containment:"document"});
   } );
