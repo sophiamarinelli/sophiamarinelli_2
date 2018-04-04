@@ -11,7 +11,7 @@ body {
 }
 
 .bigtext {
-	position: fixed;
+	position: absolute;
 	font-family: "Helvetica";
 	font-size: 100px;
 	text-align: center;
@@ -19,28 +19,30 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
    display: inline-block;
+   white-space: nowrap;
 }
 
 .one {
-	top: 0px;
 	transform: rotate(40deg);
 	transform-origin: bottom left;
+	top: 0px;
 }
 
 .two {
-	top: 0px;
+	top: 0;
 
 }
 
 .three {
 	top: 10%;
 	transform: rotate(-5deg);
-	right: 0;
-	white-space: nowrap;
+	right: 0px;
+	
 }
 
 .viewer {
 	position: absolute;
+	top: 15vh;
 	width: 50%;
 	height: 500px;
 	overflow: scroll;
@@ -50,19 +52,19 @@ body {
 }
 
 .magnolia {
-	right: 30%;
-	top: 20%;
+	position: absolute;
+
 }
 
 .recipes {
-	right: 50%;
-	top: 80%;
+	position: absolute;
+	left: 2%;
 }
 
 .bowie {
-	right: 30%;
-	bottom: 10%;
+	position: absolute;
 	display: block;
+	left: 4%;
 }
 
 .image {
@@ -107,6 +109,7 @@ body {
 	width: 200px;
 	height: 200px;
 	overflow: scroll;
+	display: none;
 }
 
 .instruct {
@@ -119,5 +122,62 @@ body {
 	-webkit-text-fill-color: rgba(0, 0, 0, 0); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-   display: inline-block;
+   display: none;
 }
+
+.bowie:hover + .instruct {
+	position: relative;
+	display: inline-block;
+}
+
+.magnolia:hover + .instruct {
+	position: relative;
+	display: inline-block;
+}
+
+.recipes:hover + .instruct {
+	position: relative;
+	display: inline-block;
+}
+
+/*.viewercontainer {
+    width: 700px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    border: 1px solid red;
+
+}
+*/
+
+ .ui-resizable-helper { 
+ 	border: 2px dotted black; 
+ }
+
+ .about {
+ 	position: absolute;
+ 	width: 50%;
+ 	height: 500px;
+ 	margin: auto;
+ 	top:0;
+ 	bottom: 0;
+ 	right: 0;
+ 	left: 0;
+ 	background-color: white;
+ 	border: 1px solid black;
+ 	z-index: 10;
+ 	overflow: scroll;
+ 	padding: 20px;
+ }
+
+ .bodytext {
+ 	font-size: 100px;
+	-webkit-text-fill-color: rgba(0, 0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+ }
+
+ #smiley {
+ 	text-align: center;
+ }

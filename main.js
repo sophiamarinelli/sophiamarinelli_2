@@ -6,8 +6,13 @@
 // })
 
 $( function() {
-    $( ".viewer" ).draggable({containment:"document"});
-    $( ".viewer" ).resizable({});
+    $( ".viewer" ).draggable({containment:"document"}).resizable({aspectRatio: 4 / 3});
     $( ".bigtext" ).draggable({containment:"document"});
     $( ".nav" ).draggable({containment:"document"});
+    $( ".about" ).draggable({containment:"document"}).resizable({});
   } );
+
+$(".viewer").click(function(){
+	console.log("1")
+    $(".viewer").css("zIndex", 9999);
+ });
