@@ -36,7 +36,7 @@ $( function() {
 
 $(".bowie").click(function(){
     //assign all divs `z-index` = 90 including clicked one
-    $(".magnolia, .recipes, .bowie").css("z-index","90");
+    $(".magnolia, .recipes, .bowie, .sxsw").css("z-index","90");
     $("#descriptionbowie").css("display","inline-block")
 
     //assign `z-index` = 100 to clicked one
@@ -45,7 +45,7 @@ $(".bowie").click(function(){
 
 $(".magnolia").click(function(){
     //assign all divs `z-index` = 90 including clicked one
-    $(".magnolia, .recipes, .bowie").css("z-index","90");
+    $(".magnolia, .recipes, .bowie, .sxsw").css("z-index","90");
     $("#descriptionmagnolia").css("display","inline-block")
 
     //assign `z-index` = 100 to clicked one
@@ -54,8 +54,17 @@ $(".magnolia").click(function(){
 
 $(".recipes").click(function(){
     //assign all divs `z-index` = 90 including clicked one
-    $(".magnolia, .recipes, .bowie").css("z-index","90");
+    $(".magnolia, .recipes, .bowie, .sxsw").css("z-index","90");
     $("#descriptionrecipes").css("display","inline-block")
+
+    //assign `z-index` = 100 to clicked one
+    $(this).css("z-index","100")
+});
+
+$(".sxsw").click(function(){
+    //assign all divs `z-index` = 90 including clicked one
+    $(".magnolia, .recipes, .bowie, .sxsw").css("z-index","90");
+    $("#descriptionsxsw").css("display","inline-block")
 
     //assign `z-index` = 100 to clicked one
     $(this).css("z-index","100")
