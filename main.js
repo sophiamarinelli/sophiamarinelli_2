@@ -11,14 +11,13 @@ $( function() {
     });
     $( ".bigtext" ).draggable({});
     $( ".nav" ).draggable({containment:"document"});
-    $( ".about" ).draggable({containment:"document"}).resizable({});
+    $( ".about" ).draggable({});
   } );
 
 
 // $(".magnolia, .recipes, .bowie").click(function(){
 //     //assign all divs `z-index` = 90 including clicked one
 //     $(".magnolia, .recipes, .bowie").css("z-index","90");
-//     $(".bowie").
 
 //     //assign `z-index` = 100 to clicked one
 //     $(this).css("z-index","100")
@@ -37,7 +36,9 @@ $( function() {
 $(".bowie").click(function(){
     //assign all divs `z-index` = 90 including clicked one
     $(".magnolia, .recipes, .bowie, .sxsw").css("z-index","90");
-    $("#descriptionbowie").css("display","inline-block")
+    $(".description").hide()
+    $("#descriptionbowie").show()
+
 
     //assign `z-index` = 100 to clicked one
     $(this).css("z-index","100")
@@ -46,7 +47,8 @@ $(".bowie").click(function(){
 $(".magnolia").click(function(){
     //assign all divs `z-index` = 90 including clicked one
     $(".magnolia, .recipes, .bowie, .sxsw").css("z-index","90");
-    $("#descriptionmagnolia").css("display","inline-block")
+  	$(".description").hide()
+    $("#descriptionmagnolia").show()
 
     //assign `z-index` = 100 to clicked one
     $(this).css("z-index","100")
@@ -55,7 +57,8 @@ $(".magnolia").click(function(){
 $(".recipes").click(function(){
     //assign all divs `z-index` = 90 including clicked one
     $(".magnolia, .recipes, .bowie, .sxsw").css("z-index","90");
-    $("#descriptionrecipes").css("display","inline-block")
+    $(".description").hide()
+    $("#descriptionrecipes").show()
 
     //assign `z-index` = 100 to clicked one
     $(this).css("z-index","100")
@@ -64,7 +67,8 @@ $(".recipes").click(function(){
 $(".sxsw").click(function(){
     //assign all divs `z-index` = 90 including clicked one
     $(".magnolia, .recipes, .bowie, .sxsw").css("z-index","90");
-    $("#descriptionsxsw").css("display","inline-block")
+    $(".description").hide()
+    $("#descriptionsxsw").show()
 
     //assign `z-index` = 100 to clicked one
     $(this).css("z-index","100")
