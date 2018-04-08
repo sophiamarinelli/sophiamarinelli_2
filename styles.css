@@ -27,8 +27,27 @@ body {
 	-webkit-text-fill-color: black;
 }
 
-#email {
+.contact {
+	width: -webkit-fit-content;
+	background-color: white;
+	border: 1px solid black;
+	padding: 20px;
+	position: absolute;
+}
 
+#email {
+	left: 17%;
+	top: 10%;
+}
+
+#linkedin {
+	top: 65%;
+	left: 23%;
+}
+
+#insta {
+	right: 15%;
+	top: 35%;
 }
 
 .one {
