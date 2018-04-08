@@ -20,6 +20,15 @@ body {
   -webkit-text-stroke-color: black;
    display: inline-block;
    white-space: nowrap;
+   text-decoration: none;
+}
+
+.bigtext:hover {
+	-webkit-text-fill-color: black;
+}
+
+#email {
+
 }
 
 .one {
@@ -131,10 +140,12 @@ body {
 }
 
 .linktext:hover {
-	color: black;
-	text-decoration: line-through;
+	-webkit-text-fill-color: black;
 }
 
+.linktext:active {
+	text-decoration: line-through;
+}
 
 .instruct {
 	position: fixed;
@@ -224,4 +235,12 @@ body {
  	-webkit-text-fill-color: black; /* Will override color (regardless of order) */
  }
 
+
+#arrow {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100px;
+	z-index: 10000;
+}
 

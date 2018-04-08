@@ -38,6 +38,8 @@ $(".bowie").click(function(){
     $(".magnolia, .recipes, .bowie, .sxsw").css("z-index","90");
     $(".description").hide()
     $("#descriptionbowie").show()
+    $("#arrow").show()
+
 
 
     //assign `z-index` = 100 to clicked one
