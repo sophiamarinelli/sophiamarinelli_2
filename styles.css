@@ -69,6 +69,11 @@ overflow: hidden;
 	
 }
 
+.four{
+	right: -83px;
+    bottom: -329px;
+    transform: rotate(-5deg);
+}
 .viewer {
 	position: absolute;
 	margin: auto;
