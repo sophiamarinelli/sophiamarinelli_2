@@ -266,25 +266,4 @@ body {
 	z-index: 10000;
 }
 
-.descriptionviewer {
-	position: absolute;
-	margin: auto;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	height: 600px;
-	overflow: scroll;
-	border: 1px solid black;
-
-
-}
-
-#descriptionbowie2 {
-	top: 60px;
-	left: 60px;
-	z-index: 3;
-	display: inline-block;
-	width: 80%
-}
 
